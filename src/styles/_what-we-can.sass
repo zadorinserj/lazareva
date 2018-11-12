@@ -1,0 +1,46 @@
+.what-we-can
+    padding-bottom: 120px
+    background: url('../img/we-can-bg.png') center no-repeat
+    background-size: cover
+
+    &__title
+        display: block
+        margin-bottom: 360px
+
+    &__wrapper  
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding-bottom: 350px
+
+    &__descr
+        position: absolute
+        bottom: 0
+        left: 15px
+
+.what-item
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+    &:hover
+        .what-item__title
+            color: $accent
+
+            &:after
+                background-color: $accent
+
+    &__title
+        position: relative
+        font-size: 30px
+        transition: color 0.3s ease
+
+        &:after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 1px
+            background-color: transparent
+            transition: background-color 0.3s ease

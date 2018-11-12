@@ -1,0 +1,79 @@
+$text-color: #252525
+$hover-link: #543fd3
+$accent: #543fd3
+$btn-text: #d3d3d3
+    
+*, *:before, *:after
+    box-sizing: border-box
+
+html, body
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+
+body
+    font-family: 'Roboto Mono', monospace
+    font-weight: 400
+    font-size: 14px 
+    color: $text-color
+    background-color: #fff
+
+a, a:hover
+    text-decoration: none
+    transition: color 0.2s ease
+
+button
+    background-color: transparent
+    border: none
+
+ul 
+    padding: 0
+    margin: 0
+    list-style: none
+
+.container
+    position: relative
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+    @media (min-width: 576px)
+        max-width: 540px
+    @media (min-width: 768px)
+        max-width: 720px
+    @media (min-width: 992px)
+        max-width: 960px
+    @media (min-width: 1700px)
+        max-width: 1630px
+
+.btn
+    color: $btn-text
+    font-size: 26px
+    background-color: $accent
+    border-radius: 5px
+    cursor: pointer
+    
+.section-title
+    margin: 0
+    font-size: 30px
+    color: $accent
+    text-transform: uppercase
+    font-weight: 700
+    text-decoration: underline
+
+    &--dark
+        color: #000
+
+    &--with-line
+        text-decoration: underline
+
+    &--no-line
+        text-decoration: none
+
+    &--light
+        color: #fff
+
+.section
+    padding-top: 60px
