@@ -283,9 +283,23 @@ ul {
   border-color: transparent transparent #543fd3 transparent;
 }
 
+.portfolio__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio__btn {
+  width: 346px;
+  padding: 29px 10px;
+}
+
 .filter-grid {
   position: relative;
-  margin: 0 -5px;
+  margin: 0 -5px 55px -5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,6 +311,99 @@ ul {
   position: relative;
   margin: 5px;
   width: calc(100% / 4 - 10px);
+  height: 325px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item--active .portfolio-item__content-wrapper, .portfolio-item:hover .portfolio-item__content-wrapper {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-item__image-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.portfolio-item__image-wrapper img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.portfolio-item__content-wrapper {
+  position: relative;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  z-index: 2;
+  min-height: 100%;
+  padding: 30px 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+  will-change: transform;
+}
+
+.portfolio-item__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.portfolio-item__fullsize {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("../img/fullsize.png") center no-repeat;
+}
+
+.portfolio-item__descr {
+  min-height: 170px;
+  margin-bottom: 28px;
+  padding: 20px 0;
+  border-top: 1px solid #6f7172;
+  border-bottom: 1px solid #6f7172;
+}
+
+.portfolio-item__link {
+  position: relative;
+  display: block;
+  color: #fff;
+}
+
+.portfolio-item__link:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.portfolio-item__link:after {
+  content: url("../img/plus.png");
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .price {
@@ -414,6 +521,93 @@ ul {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+}
+
+.contacts {
+  padding-bottom: 65px;
+  background: url("../img/contacts-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.contacts__wrapper {
+  width: 495px;
+}
+
+.contacts__map {
+  margin-left: 70px;
+}
+
+.contacts__title {
+  margin-bottom: 140px;
+}
+
+.contacts .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts-form__subtitle {
+  margin-bottom: 10px;
+}
+
+.contacts-form__link {
+  display: block;
+  margin-bottom: 42px;
+  color: #252525;
+}
+
+.contacts-form__link:hover {
+  color: #543fd3;
+}
+
+.contacts-form__input {
+  display: block;
+  width: 495px;
+  margin-bottom: 20px;
+  padding: 17px 13px;
+  border: 2px solid #ededed;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #252525;
+}
+
+.contacts-form__input:placeholder {
+  color: #252525;
+}
+
+.contacts-form__textarea {
+  display: block;
+  width: 495px;
+  margin-bottom: 20px;
+  padding: 17px 13px;
+  border: 2px solid #ededed;
+  border-radius: 5px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: #252525;
+  resize: none;
+}
+
+.contacts-form__textarea:placeholder {
+  color: #252525;
+}
+
+.contacts-form__ps {
+  margin-bottom: 16px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.contacts-form__btn {
+  width: 100%;
+  padding: 22px 10px;
 }
 
 .footer {
