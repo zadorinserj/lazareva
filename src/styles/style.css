@@ -108,6 +108,162 @@ ul {
   padding-top: 60px;
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-dots {
+  margin-left: auto;
+  margin-right: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 24px;
+}
+
+.slick-dots li {
+  font-size: 0;
+  line-height: 1;
+}
+
+.slick-dots li button {
+  position: relative;
+  margin-right: 33px;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: font-size 0.05s ease;
+  transition: font-size 0.05s ease;
+}
+
+.slick-dots li button:before {
+  content: '0';
+}
+
+.slick-dots li button:after {
+  content: '/';
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  font-size: 16px;
+}
+
+.slick-dots li:last-of-type button {
+  margin-right: 0;
+}
+
+.slick-dots li:last-of-type button:after {
+  display: none;
+}
+
+.slick-dots .slick-active button {
+  font-size: 24px;
+  color: #543fd3;
+}
+
 .header {
   width: 100%;
   display: -webkit-box;
