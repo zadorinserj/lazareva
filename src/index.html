@@ -13,35 +13,62 @@
             <img src="img/header-logo.png" alt="Логотип в шапке">
         </a>
         <nav class="anchor-menu header__menu">
-            <a class="header__link" href="#">Главная</a>
-            <a class="header__link" href="#">Услуги</a>
-            <a class="header__link" href="#">Портфолио</a>
-            <a class="header__link" href="#">Цены</a>
-            <a class="header__link" href="#">Отзывы</a>
-            <a class="header__link" href="#">Контакты</a>
+            <a class="header__link" href="#id-main-section">Главная</a>
+            <a class="header__link" href="#id-what-we-setcion">Услуги</a>
+            <a class="header__link" href="#id-portfolio-section">Портфолио</a>
+            <a class="header__link" href="#id-price-section">Цены</a>
+            <a class="header__link" href="#id-feedback-section">Отзывы</a>
+            <a class="header__link" href="#id-contacts-section">Контакты</a>
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main" id="id-main-section">
         <div class="container">
-            <div class="main__info">
-                <div class="main__title">
-                    <img src="img/main-logo.png" alt="Логотип на главном экране">
+            <div class="main__wrapper">
+                <div class="main__info">
+                    <div class="main__title">
+                        <img src="img/main-logo.png" alt="Логотип на главном экране">
+                    </div>
+                    <div class="main__descr">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Взгляд по всей послушавшись, даже однажды ручеек ты. Снова, журчит лучше.</div>
+                    <button class="btn main__btn">Хочу проект!</button>
                 </div>
-                <div class="main__descr">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Взгляд по всей послушавшись, даже однажды ручеек ты. Снова, журчит лучше.</div>
-                <button class="btn main__btn">Хочу проект!</button>
-            </div>
-            <div class="main__gallery"></div>
-            <div class="main__socials">
-                <a href="#" class="main__socials-link main__socials-link--ig"></a>
-                <a href="#" class="main__socials-link main__socials-link--fb"></a>
-                <a href="#" class="main__socials-link main__socials-link--vk"></a>
-                <a href="#" class="main__socials-link main__socials-link--wa"></a>
+                <div class="gallery main__gallery" data-simplebar="init">
+                    <div class="gallery__item">
+                        <img src="img/main_photo.jpg" alt="Фотография из портфолио">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/main_photo.jpg" alt="Фотография из портфолио">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/main_photo.jpg" alt="Фотография из портфолио">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/main_photo.jpg" alt="Фотография из портфолио">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/main_photo.jpg" alt="Фотография из портфолио">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/main_photo.jpg" alt="Фотография из портфолио">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/main_photo.jpg" alt="Фотография из портфолио">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/main_photo.jpg" alt="Фотография из портфолио">
+                    </div>
+                </div>
+                <div class="main__socials">
+                    <a href="#" class="main__socials-link main__socials-link--ig"></a>
+                    <a href="#" class="main__socials-link main__socials-link--fb"></a>
+                    <a href="#" class="main__socials-link main__socials-link--vk"></a>
+                    <a href="#" class="main__socials-link main__socials-link--wa"></a>
+                </div>
             </div>
         </div>
     </main>
 
-    <section class="section what-we-can">
+    <section class="section what-we-can" id="id-what-we-setcion">
         <div class="container">
             <h2 class="section-title what-we-can__title">Что мы <span class="section-title--dark section-title--with-line">можем?</span></h2>
             <div class="what-we-can__wrapper">
@@ -68,7 +95,7 @@
         </div>
     </section>
 
-    <section class="section portfolio">
+    <section class="section portfolio" id="id-portfolio-section">
         <div class="container">
             <h2 class="section-title portfolio__title">Портфолио</h2>
             <nav class="portfolio__filter">
@@ -174,7 +201,7 @@
         </div>
     </section>
 
-    <section class="section price">
+    <section class="section price" id="id-price-section">
         <div class="container">
             <h2 class="section-title section-title--light price__title">Цены</h2>
             <div class="price__wrapper">
@@ -223,7 +250,7 @@
         </div>
     </section>
 
-    <section class="section feedback">
+    <section class="section feedback" id="id-feedback-section">
         <div class="container">
             <h2 class="section-title section-title--no-line"><span class="section-title--dark">Оставьте ваш отзыв на </span><a class="section-title--with-line" href="mailto:ksepst17@mail.ru">KSEPST17@MAIL.RU</a></h2>
             <div class="feedback__slider-wrapper js-feedback-slider">
@@ -266,7 +293,7 @@
         </div>
     </section>
 
-    <section class="section contacts">
+    <section class="section contacts" id="id-contacts-section">
         <div class="container">
             <div class="contacts__wrapper">
                 <h2 class="section-title contacts__title">Контакты</h2>
@@ -294,7 +321,7 @@
                 </form>
             </div>
             <div class="contacts__map" id="google-map">
-                <img src="img_press/contacts-map--default.jpg" alt="Заглушка карты">
+                <img src="img/contacts-map--default.png" alt="Заглушка карты">
             </div>
         </div>
     </section>
@@ -311,6 +338,8 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
 </body>

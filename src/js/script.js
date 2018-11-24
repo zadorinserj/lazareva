@@ -7,4 +7,13 @@ window.onload = () => {
         dots: true,
         arrows: false,
     });
+
+    const $page = $('html, body');
+
+    $('a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 700);
+        return false;
+    });
 };
